@@ -1,0 +1,8 @@
+CSRF attack method with low and medium level DVWA standards.
+ 
+The steps:
+1. Inspect the elements of the EJBCA site that have a structure that accepts input in the form of a form (on this site it is located in the "List certificates" module).
+
+2. Create a custom URL to make a request to the EJBCA site in the "List certificates" module
+
+*still limited understanding of XSS attacks but can't get to CSRF
