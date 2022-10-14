@@ -1,0 +1,5 @@
+The attack method is by trying to login into the ejbca server from another device with another certificate.
+
+ 
+
+*Obstacle: any unsuccessful login attempts are not logged in the EJBCA system log. Reference: https://www.commoncriteriaportal.org/files/epfiles/ST%20EJBCA%20v7.4.1%20v15.pdf
