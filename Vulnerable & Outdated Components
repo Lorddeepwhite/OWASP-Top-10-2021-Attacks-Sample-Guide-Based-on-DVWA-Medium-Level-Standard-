@@ -1,0 +1,10 @@
+Attack method by checking component version via ubuntu terminal.
+ 
+The steps:
+1. Open a terminal and enter the package command with the format:
+
+apt list --upgradeable
+
+2. Check whether the ejbca component appears or not on the output terminal to make sure there is the latest version or not.
+
+3. Commands in the terminal are executed via the Digital Forensic Readiness python script so that they can be real-time.
