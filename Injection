@@ -1,0 +1,6 @@
+Command injection attack method with low and medium level DVWA standards.
+ 
+The steps:
+1. Inspect the elements of the EJBCA site that have a structure that accepts input in the form of a form (on this site it is located in the "List certificates" module).
+
+2. Check whether there is a prohibition on certain symbol expressions, enter a malicious command, for example: CN=adminCA;cat /etc/passwd
