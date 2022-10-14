@@ -1,0 +1,10 @@
+File upload attack method with low and medium level DVWA standards.
+ 
+The steps:
+1. Inspection of elements from the EJBCA site that has a structure for accepting file upload inputs (in EJBCA it is located in the "inspect certificate/CSR" module).
+
+2. Create an exploit file but change its extension according to the one accepted by the EJBCA site (since the site functions to manage certificates, the accepted extensions are .crt, .p12, .pem, and .cer.
+
+3. Submit a file upload to EJBCA, when you want to send the request, intercept it using the burp suite.
+
+4. The intercepted request has its file extension changed so that it can be exploited to EJBCA, then forwarded to the site.
