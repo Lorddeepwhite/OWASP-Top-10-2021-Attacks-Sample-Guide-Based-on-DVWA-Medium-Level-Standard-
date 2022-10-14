@@ -1,0 +1,10 @@
+Attack method with TLS checks via ubuntu terminal.
+ 
+The steps:
+1. Open a terminal and enter the TLS check command with the format:
+
+curl –v –s –tlsv1.3 https://localhost:8442/ejbca -o /dev/null/ 2>&1
+
+2. Check whether the TLS 1.1 to 1.3 protocol handshake is active or not
+
+3. Commands in the terminal are executed through the Digital Forensic Readiness python script so that they can be real-time.
